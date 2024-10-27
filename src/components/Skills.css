@@ -1,0 +1,139 @@
+/* Skills.css */
+
+.skills {
+  padding: var(--spacing-large);
+  background-color: transparent;
+  border-radius: 25px;
+  margin-bottom: var(--spacing-large);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: transparent;
+}
+
+.skills h2 {
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing-large);
+  font-size: var(--font-size-h2);
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-large);
+  position: relative;
+}
+
+.skill-item {
+  background-color: transparent;
+  border-radius: 15px;
+  padding: var(--spacing-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(120, 9, 9, 0.1);
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(172, 197, 33, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-small);
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.1);
+}
+
+.skill-item h3 {
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-small);
+  transition: color 0.3s ease;
+}
+
+.skill-bar-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-bar {
+  height: 100%;
+  border-radius: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skill-level {
+  color: var(--subtext-color);
+  font-size: 0.9rem;
+  margin-top: var(--spacing-small);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+
+  .skill-item h3 {
+    font-size: 1rem;
+  }
+}
