@@ -1,28 +1,28 @@
 import React from "react";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css"; // Import tooltip styles
-import "./SocialProfiles.css"; // Import custom styles
+import "./SocialProfiles.css";
 
 const SocialProfiles = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/ramesh-devkota-b9342723a/",
       icon: "fab fa-linkedin",
     },
     {
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Rawmace",
       icon: "fab fa-github",
     },
     {
       name: "Twitter",
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/Rawhmace",
       icon: "fab fa-twitter",
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/yourusername",
+      url: "https://www.instagram.com/mace_raw/",
       icon: "fab fa-instagram",
     },
   ];
