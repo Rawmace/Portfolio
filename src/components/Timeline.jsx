@@ -82,7 +82,8 @@ const Timeline = () => {
             </h3>
             <p
               style={{
-                fontFamily: "cursive",
+                fontFamily:
+                  "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
                 color: "white",
                 lineHeight: "1.6",
                 fontSize: "medium",
@@ -90,7 +91,8 @@ const Timeline = () => {
             >
               <h2
                 style={{
-                  fontFamily: "cursive",
+                  fontFamily:
+                    "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
                   color: "aquamarine",
                   lineHeight: "1.6",
                   fontSize: "medium",
@@ -109,7 +111,8 @@ const Timeline = () => {
                   marginTop: "1rem",
 
                   color: "yellow",
-                  fontFamily: "cursive",
+                  fontFamily:
+                    "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
                   fontStyle: "Bolder",
                   boxShadow: "0px 4px 5px aqua",
                   borderRadius: "2rem",

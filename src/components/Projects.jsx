@@ -27,7 +27,7 @@ const Projects = () => {
 
   const buttonStyle = {
     backgroundColor: "black",
-    fontFamily: "cursive",
+    fontFamily: "Roboto",
     fontWeight: "bold",
     fontSize: "medium",
     color: "yellow",
@@ -58,7 +58,7 @@ const Projects = () => {
             }}
           >
             <h3 style={{ color: project.color }}>{project.title}</h3>
-            <p style={{ fontFamily: "cursive", fontSize: "1rem" }}>
+            <p style={{ fontFamily: "Roboto", fontSize: "1rem" }}>
               {project.description}
             </p>
             <button
