@@ -17,27 +17,9 @@ import Background3D from "./components/Background3D";
 import "./styles.css";
 import SocialProfiles from "./components/SocialProfiles";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { FaAlignCenter } from "react-icons/fa";
 function AppContent() {
   const { isDarkMode } = useTheme();
-
-  // Sample project data
-  const projects = [
-    {
-      id: 1,
-      title: "Project 1",
-      description: "A brief description of project 1",
-    },
-    {
-      id: 2,
-      title: "Project 2",
-      description: "A brief description of project 2",
-    },
-    {
-      id: 3,
-      title: "Project 3",
-      description: "A brief description of project 3",
-    },
-  ];
 
   // // Sample blog post data
   // const blogPosts = [
@@ -99,6 +81,7 @@ function AppContent() {
         </section>
         <Contact />
       </main>
+      <SocialProfiles />
       <Footer />
     </div>
   );

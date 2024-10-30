@@ -5,21 +5,21 @@ const Projects = () => {
     {
       title: "Gurkha Gears",
       description:
-        "An e-commerce website for a Clothing brand named Gurkha Gears in Nepal, Kathmandu",
-      link: "https://gurkha-gears-github-io.vercel.app/index.html",
+        " It is An virtual e-commerce website for a Clothing brand named Gurkha Gears in Nepal, Kathmandu done as college project",
+      link: "https://gurkha-gears.vercel.app/",
       color: "yellow",
     },
     {
       title: "Mandro Restaurant",
       description:
-        "I made a portfolio website for a designer and a content creator",
+        "I made a fully functional  website for a restaurant named Mandro",
       link: "#",
       color: "Aqua",
     },
     {
       title: "Khutruke - Online Savings Platform",
       description:
-        "Developed and launched Nepal's pioneering online savings platform,\n tansforming \na local savings group into a nationwide digital solution.",
+        "Developed and launched Nepal's pioneering online savings platform, tansforming a local savings group into a nationwide digital solution.",
       link: "https://khutruke.org.np/",
       color: "Pink",
     },

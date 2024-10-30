@@ -13,32 +13,35 @@ const Timeline = () => {
 
   const events = [
     {
-      date: "2022",
+      date: "2022-2023",
       title: "FullStack Developer",
       place: "Deerwalk.Inc, Kathmandu Nepal",
       description:
         "Led a team of developers in creating cutting-edge web applications using React, Node.js, and MongoDB. Implemented CI/CD pipelines and improved overall team productivity by 30%.",
+      skills: "SKills: React, Node.js, MongoDB, Git,Kanban",
       icon: <FaCode />,
       color: "Aqua",
     },
     {
-      date: "2020",
-      title: "WordPress Developer",
-      place: "Sathi Solutions,Kathmandu Nepal",
-      description:
-        "Developed and maintained over 20 WordPress sites for various clients. Customized themes, created plugins, and optimized site performance, resulting in a 40% increase in client satisfaction.",
-      icon: <FaWordpress />,
-
-      color: "Yellow",
-    },
-    {
-      date: "2019",
+      date: "2021-2022",
       title: "Intern",
       place: "Deerwalk.Inc, Kathmandu Nepal",
       description:
         "Started my journey in web development. Learned the fundamentals of HTML, CSS, and JavaScript. Assisted in the development of sites for various clients and businesses gaining valuable real-world experience.",
       icon: <FaGraduationCap />,
+      skills: "SKills: React, Node.js, MongoDB, Git",
       color: "Pink",
+    },
+    {
+      date: "2019-2020",
+      title: "Digital Marketing Specialist",
+      place: "Digital Terai, Kathmandu, Nepal",
+      description:
+        "Drove digital marketing strategies, boosting SEO and social media engagement. Increased client engagement by 40% and improved search rankings for 20+ websites. Enhanced PPC campaigns and web designs, achieving a 25% rise in conversions.",
+      skills: "SKills: SEO, Social Media Marketing, Web Design, PPC",
+      icon: <FaWordpress />,
+
+      color: "Yellow",
     },
   ];
 
@@ -116,9 +119,11 @@ const Timeline = () => {
                   fontStyle: "Bolder",
                   boxShadow: "0px 4px 5px aqua",
                   borderRadius: "2rem",
+                  maxWidth: "fit-content",
+                  padding: "1em",
                 }}
               >
-                <p>Skills: React, Node.js, MongoDB, Git</p>
+                <p>{event.skills}</p>
               </motion.div>
             )}
           </motion.div>
