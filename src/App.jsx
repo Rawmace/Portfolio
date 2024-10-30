@@ -47,7 +47,7 @@ function AppContent() {
           <h2>My Skills</h2>
           <Skills />
         </section>
-        <section id="blogs">
+        {/* <section id="blogs">
           <h2>Blogs</h2>
           {blogPosts.map((post) => (
             <BlogPost
@@ -58,7 +58,7 @@ function AppContent() {
               content={post.content}
             />
           ))}
-        </section>
+        </section> */}
 
         <section id="projects">
           <h2>My Projects</h2>
