@@ -21,16 +21,16 @@ import { FaAlignCenter } from "react-icons/fa";
 function AppContent() {
   const { isDarkMode } = useTheme();
 
-  // // Sample blog post data
-  // const blogPosts = [
-  //   {
-  //     id: 1,
-  //     title: "IS AI Curse Or Blessing??",
-  //     date: "2024-10-21",
-  //     author: "Ramesh Devkota",
-  //     content: "Blogs are underway. Coming soon!!! ",
-  //   },
-  // ];
+  // Sample blog post data
+  const blogPosts = [
+    {
+      id: 1,
+      title: "IS AI Curse Or Blessing??",
+      date: "2024-10-21",
+      author: "Ramesh Devkota",
+      content: "Blogs are underway. Coming soon!!! ",
+    },
+  ];
 
   return (
     <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
@@ -47,7 +47,7 @@ function AppContent() {
           <h2>My Skills</h2>
           <Skills />
         </section>
-        {/* <section id="blogs">
+        <section id="blogs">
           <h2>Blogs</h2>
           {blogPosts.map((post) => (
             <BlogPost
@@ -58,7 +58,7 @@ function AppContent() {
               content={post.content}
             />
           ))}
-        </section> */}
+        </section>
 
         <section id="projects">
           <h2>My Projects</h2>
