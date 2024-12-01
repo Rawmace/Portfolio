@@ -11,7 +11,8 @@ const Projects = () => {
     },
     {
       title: "Muncha.Com",
-      description: "A fully functional  Ecommerce site.",
+      description:
+        "A fully functional  Ecommerce site for a gift and grocery store with delivery system.",
       link: "https://muncha.com/",
       color: "Aqua",
     },
