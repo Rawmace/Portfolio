@@ -5,15 +5,14 @@ const Projects = () => {
     {
       title: "Gurkha Gears",
       description:
-        " It is An virtual e-commerce website for a Clothing brand named Gurkha Gears in Nepal, Kathmandu done as college project",
+        " It is my first project as a developer: An virtual e-commerce website for a Clothing brand named Gurkha Gears in Nepal, Kathmandu done as college project",
       link: "https://gurkha-gears.vercel.app/",
       color: "yellow",
     },
     {
-      title: "Mandro Restaurant",
-      description:
-        "I made a fully functional  website for a restaurant named Mandro",
-      link: "#",
+      title: "Muncha.Com",
+      description: "A fully functional  Ecommerce site.",
+      link: "https://muncha.com/",
       color: "Aqua",
     },
     {
