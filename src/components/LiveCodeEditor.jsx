@@ -5,7 +5,7 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 const LiveCodeEditor = () => {
   const [code, setCode] = useState(
     `function Welcome() {
-  return <p>Play with skills don't play with emotions. --Ramesh:)</p>
+  return <p>Welcome to my site --Ramesh :)</p>
 }`
   );
 
