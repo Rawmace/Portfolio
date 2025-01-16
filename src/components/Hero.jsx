@@ -3,6 +3,9 @@ import backgroundImage from "../assets/b1.jpg"; // Import your image
 
 const Hero = () => {
   const heroStyle = {
+    opacity: 0.7,
+    zIndex: -4,
+    color: "yellow",
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
