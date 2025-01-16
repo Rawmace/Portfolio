@@ -35,22 +35,13 @@
 }
 
 body {
+  background-color: black;
   font-family: var(--font-main);
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--text-color);
   min-height: 100vh;
   overflow-x: hidden;
-}
-
-/* 3D Background styles */
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 .container {
@@ -62,6 +53,7 @@ canvas {
 }
 
 .App {
+  background-color: black;
   position: relative;
   z-index: 1;
 }
@@ -172,13 +164,6 @@ section {
   margin-bottom: var(--spacing-large);
   margin-left: 4vh;
   font-family: monospace;
-}
-.about > p {
-  font-size: larger;
-  font-weight: bold;
-  font-family: var(--font-main);
-  padding: var(--spacing-large);
-  text-align: center;
 }
 
 .project-grid {
