@@ -1,0 +1,54 @@
+.icon-container {
+  position: relative;
+  display: inline-block; /* Ensure the icon is treated as an inline block */
+  transition: all 0.2s;
+  font-size: 17px;
+
+  .nextjs-icon {
+    svg {
+      fill: var(--nextjs-color);
+    }
+  }
+}
+
+.invert-nextjs {
+  filter: invert(100%);
+}
+
+
+.tooltip {
+  background-color: var(--main-color);
+  opacity: 0.8;
+  color: white;
+  font-size: 14px;
+  font-family: "Dosis", sans-serif;
+  position: absolute;
+  letter-spacing: 1px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 8px;
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+}
+
+.tooltip::before {
+  background-color: var(--main-color);
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+}
+
+.icon-container:hover .tooltip {
+  top: -100%;
+
+  visibility: visible;
+  pointer-events: auto;
+}
