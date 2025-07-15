@@ -47,11 +47,11 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="relative mt-24 bg-white px-6 pt-12 pb-8 text-sm leading-relaxed text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
+    <footer className="relative mt-24 bg-white px-6 pt-12 pb-8 text-md leading-relaxed text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-3">
         {/* Left Section */}
         <div>
-          <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-200 font-[var(--incognito)]">
+          <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-200 font-[var(--incognito)]">
             Ramesh Devkota
           </h2>
           <p className="mt-2">
@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* Center Section - Quick Links */}
         <div>
-          <h3 className="text-base font-medium text-zinc-800 dark:text-zinc-200 font-[var(--incognito)]">
+          <h3 className="text-lg font-medium text-zinc-800 dark:text-zinc-200 font-[var(--incognito)]">
             Quick Links
           </h3>
           <ul className="mt-2 space-y-1">
@@ -82,7 +82,7 @@ const Footer = () => {
 
         {/* Right Section - Social Links */}
         <div>
-          <h3 className="text-base font-medium text-zinc-800 dark:text-zinc-200 font-[var(--incognito)]">
+          <h3 className="text-lg font-medium text-zinc-800 dark:text-zinc-200 font-[var(--incognito)]">
             Connect
           </h3>
           <div className="mb-3 mt-2 flex items-center gap-4">
@@ -102,17 +102,17 @@ const Footer = () => {
               );
             })}
           </div>
-          <a
+          <a 
             href="mailto:drhsemar@gmail.com"
-            className="transition hover:text-[var(--accent-color)]"
+            className=" transition hover:text-[var(--accent-color)]"
           >
-            drhsemar@gmail.com
+            <strong>drhsemar@gmail.com</strong>
           </a>
         </div>
       </div>
 
       {/* Copyright */}
-      <p className="mt-10 text-center text-xs text-zinc-500 dark:text-zinc-600">
+      <p className="mt-10 text-center text-md text-zinc-500 dark:text-zinc-600">
         © {new Date().getFullYear()} Ramesh Devkota. All rights reserved.
       </p>
 

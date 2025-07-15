@@ -2,6 +2,7 @@
 import React from "react";
 import { Linkedin, Mail, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
+import { icons } from "lucide-react";
 
 const ContactPage = () => {
   const contacts = [
@@ -9,21 +10,21 @@ const ContactPage = () => {
       platform: "LinkedIn",
       icon: <Linkedin className="w-8 h-8" />,
       value: "Connect with me",
-      link: "https://www.linkedin.com/in/bipin-kalakheti/",
+      link: "https://www.linkedin.com/in/ramesh-devkota/",
       delay: 0.2,
     },
     {
       platform: "Email",
       icon: <Mail className="w-8 h-8" />,
       value: "Send me an email",
-      link: "mailto:bipinkalakheti7@gmail.com",
+      link: "mailto:drhsemar@gmail.com",
       delay: 0.3,
     },
     {
       platform: "Instagram",
       icon: <Instagram className="w-8 h-8" />,
       value: "Follow me",
-      link: "https://www.instagram.com/beepin.7/",
+      link: "https://www.instagram.com/mace_raw?igsh=cTMwODFqemtmcmhp&utm_source=qr",
       delay: 0.4,
     },
   ];

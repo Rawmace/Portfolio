@@ -65,11 +65,11 @@ const ProfileSection = ({ email = "drhsemar@gmail.com" }) => {
             <div className="relative cursor-pointer overflow-hidden">
               <p className="group text-muted-foreground">
                 <span className="group-hover:-translate-y-full flex flex-col border-b border-dashed transition-all duration-1000 ease-slow">
-                  Hire Me
-                  <span className="invisible h-0"> Reach out</span>
+                Reach me out
+                  <span className="invisible h-0"> via email</span>
                 </span>
                 <span className="group-hover:-translate-y-full absolute top-full flex items-center transition-all duration-1000 ease-slow">
-                  Reachout
+              Via Email
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

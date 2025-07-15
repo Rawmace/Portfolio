@@ -55,7 +55,7 @@ const AboutPage = () => {
               Icon: Brain,
               title: "Project Experience",
               description:
-                "Built several full-stack applications using React, Next.js, and Node.js, including a real-time chat app and a food ordering platform. Each project has been a stepping stone in my development journey.",
+                "Built full-stack apps like a Twitter clone, AI-powered blog CMS, eCommerce site, and real-time chat app using React, Next.js, Node.js, and MongoDB as my key milestones in my dev journey..",
               color: "green",
               delay: 0.4,
             },

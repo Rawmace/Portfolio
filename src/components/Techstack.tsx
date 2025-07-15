@@ -94,7 +94,7 @@ const TechStack = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto dark:bg-black my-4 md:my-8 space-y-4 ">
-      <h2 className="text-2xl md:text-4xl sm:text-3xl font-bold dark:text-white text-zinc-900">
+      <h2 className="text-xl md:text-4xl sm:text-xl font-bold dark:text-white text-zinc-900">
         What I work with
       </h2>
       <div className="space-y-8">
