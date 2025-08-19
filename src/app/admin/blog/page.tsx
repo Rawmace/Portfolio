@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 interface BlogType {
   _id: string;
@@ -134,7 +135,7 @@ export default function AdminBlogPage() {
         {preview && (
           <div className="mt-2">
             <p className="text-sm mb-1">Preview:</p>
-            <img
+            <Image
               src={preview}
               alt="Background Preview"
               className="w-full h-48 object-cover rounded"
@@ -165,7 +166,7 @@ export default function AdminBlogPage() {
         {blogs.map((blog) => (
           <div key={blog._id} className="border rounded-lg p-4 shadow hover:shadow-lg transition">
             {blog.backgroundImage && (
-              <img
+              <Image
                 src={blog.backgroundImage}
                 alt={blog.title}
                 className="w-full h-48 object-cover rounded mb-2"

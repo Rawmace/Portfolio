@@ -18,7 +18,7 @@ declare global {
 // Initialize cache if it doesn’t exist
 global._mongoose = global._mongoose || { conn: null, promise: null };
 
-let cached = global._mongoose;
+const cached = global._mongoose;
 
 async function dbConnect() {
   if (cached.conn) return cached.conn;

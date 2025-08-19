@@ -3,6 +3,7 @@ import dbConnect from "@/lib/mongodb";
 import Post from "@/models/Post";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 interface PostType {
   _id: string;
@@ -26,6 +27,7 @@ export default async function BlogPage() {
 
   return (
     <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      h2
       {posts.map((post) => (
         <Link
           key={post._id}
@@ -35,7 +37,7 @@ export default async function BlogPage() {
           {/* Background Image */}
           {post.backgroundImage ? (
             <div className="h-48 w-full overflow-hidden">
-              <img
+              <Image
                 src={post.backgroundImage}
                 alt={post.title}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"

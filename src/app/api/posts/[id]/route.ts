@@ -1,14 +1,21 @@
+// src/app/api/posts/[id]/route.ts
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import dbConnect from "@/lib/mongodb";
 import Post from "@/models/Post";
 
-export const config = { api: { bodyParser: false } };
+export const config = {
+  api: { bodyParser: false }, // required for FormData
+};
 
-export async function PATCH(req: Request, { params }: { params: { id: string } }) {
+// PATCH: update a blog by ID
+export async function PATCH(
+  req: Request,
+  context: { params: Promise<{ id: string }> } // params must be awaited
+) {
+  const { id } = await context.params;
   await dbConnect();
-  const { id } = params;
 
   const uploadsDir = path.join(process.cwd(), "public/uploads");
   if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
@@ -37,11 +44,17 @@ export async function PATCH(req: Request, { params }: { params: { id: string } }
   return NextResponse.json(updated);
 }
 
-export async function DELETE(req: Request, { params }: { params: { id: string } }) {
+// DELETE: remove a blog by ID
+export async function DELETE(
+  req: Request,
+  context: { params: Promise<{ id: string }> } // params must be awaited
+) {
+  const { id } = await context.params;
   await dbConnect();
-  const { id } = params;
 
   const blog = await Post.findByIdAndDelete(id);
+
+  // Delete background image file if it exists
   if (blog?.backgroundImage) {
     const filePath = path.join(process.cwd(), "public", blog.backgroundImage);
     if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
