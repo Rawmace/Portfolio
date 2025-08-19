@@ -44,9 +44,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Navbar />
 
-          {/* Optional decorative overlay (can be removed if unused) */}
-          {/* <div className="gradient-overlay aura absolute top-0 w-full h-60 z-20 pointer-events-none" /> */}
-
+          
           <main className="relative min-h-[90vh] px-4 sm:px-6 md:px-10 pt-6">
             <div className="relative z-10 max-w-4xl mx-auto">{children}</div>
           </main>
